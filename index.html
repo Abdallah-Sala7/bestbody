@@ -76,11 +76,19 @@
           <div class="container">
             <div class="contint-between nav-bottom-contint">
               <div class="nav-bottom-links contint-center">
-                <a href="#" class="d-lg-none">
+                <a
+                  href="#"
+                  class="d-lg-none panel-responsive-btn panel-responsive-open"
+                  data-target="search-popup"
+                >
                   <img src="assets/images/icons/search.svg" alt="search" />
                 </a>
 
-                <a href="#" class="contint-center gap-2 position-relative">
+                <a
+                  href="#"
+                  class="contint-center gap-2 position-relative panel-responsive-btn panel-responsive-open"
+                  data-target="cart-panel"
+                >
                   <img src="assets/images/icons/shopping-bag.svg" />
 
                   <div class="nav-link-title">
@@ -233,7 +241,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="hero-item container section-style">
-                  <div class="hero-img">
+                  <div class="hero-img contint-center">
                     <img
                       src="assets/images/product.png"
                       alt="product"
@@ -248,14 +256,14 @@
                       مكمل غذائي متكامل لبناء العضلات وزيادة الوزن
                     </p>
 
-                    <a href="#" class="hero-btn"> تسوق الان </a>
+                    <a href="#category" class="hero-btn"> تسوق الان </a>
                   </div>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="hero-item container section-style">
-                  <div class="hero-img">
+                  <div class="hero-img contint-center">
                     <img
                       src="assets/images/product.png"
                       alt="product"
@@ -270,14 +278,14 @@
                       مكمل غذائي متكامل لبناء العضلات وزيادة الوزن
                     </p>
 
-                    <a href="#" class="hero-btn"> تسوق الان </a>
+                    <a href="#category" class="hero-btn"> تسوق الان </a>
                   </div>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="hero-item container section-style">
-                  <div class="hero-img">
+                  <div class="hero-img contint-center">
                     <img
                       src="assets/images/product.png"
                       alt="product"
@@ -292,7 +300,7 @@
                       مكمل غذائي متكامل لبناء العضلات وزيادة الوزن
                     </p>
 
-                    <a href="#" class="hero-btn"> تسوق الان </a>
+                    <a href="#category" class="hero-btn"> تسوق الان </a>
                   </div>
                 </div>
               </div>
@@ -303,7 +311,7 @@
         </div>
       </section>
 
-      <section class="category-section section-style">
+      <section class="category-section section-style" id="category">
         <div class="container">
           <h1 class="main-title">اقسام المنتجات</h1>
 
@@ -312,7 +320,7 @@
               <div class="category-info contint-center">
                 <h2 class="category-title">اللياقه البدنية</h2>
 
-                <a href="#" class="custom-btn">اكتشف المزيد</a>
+                <a href="#products" class="custom-btn">اكتشف المزيد</a>
               </div>
 
               <img
@@ -327,7 +335,7 @@
               <div class="category-info contint-center">
                 <h2 class="category-title">التغذية الرياضية</h2>
 
-                <a href="#" class="custom-btn">اكتشف المزيد</a>
+                <a href="#products" class="custom-btn">اكتشف المزيد</a>
               </div>
 
               <img
@@ -342,7 +350,7 @@
               <div class="category-info contint-center">
                 <h2 class="category-title">التديب الرياضي</h2>
 
-                <a href="#" class="custom-btn">اكتشف المزيد</a>
+                <a href="#products" class="custom-btn">اكتشف المزيد</a>
               </div>
 
               <img
@@ -357,7 +365,7 @@
               <div class="category-info contint-center">
                 <h2 class="category-title">اللياقه البدنية</h2>
 
-                <a href="#" class="custom-btn">اكتشف المزيد</a>
+                <a href="#products" class="custom-btn">اكتشف المزيد</a>
               </div>
 
               <img
@@ -372,7 +380,7 @@
               <div class="category-info contint-center">
                 <h2 class="category-title">التديب الرياضي</h2>
 
-                <a href="#" class="custom-btn">اكتشف المزيد</a>
+                <a href="#products" class="custom-btn">اكتشف المزيد</a>
               </div>
 
               <img
@@ -386,7 +394,7 @@
         </div>
       </section>
 
-      <section class="featured-products-section section-style">
+      <section class="featured-products-section section-style" id="products">
         <div class="container">
           <h1 class="main-title">المنتجات المميزة</h1>
 
@@ -708,7 +716,7 @@
 
               <p class="discover-desc">منتجات ذات اداء عالي</p>
 
-              <a href="#" class="custom-btn">اكتشف الان</a>
+              <a href="#new-product" class="custom-btn">اكتشف الان</a>
             </div>
 
             <div class="discover-img">
@@ -722,7 +730,7 @@
         </div>
       </section>
 
-      <section class="new-products-section section-style">
+      <section class="new-products-section section-style" id="new-product">
         <div class="container">
           <h1 class="main-title">المنتجات الحصريه</h1>
 
@@ -1064,7 +1072,7 @@
                 />
               </div>
 
-              <h1 class="features-title">100% ضمان المنتج الأصلي</h1>
+              <h1 class="features-title">100% منتج أصلي</h1>
             </div>
 
             <div class="features-item contint-center">
@@ -1140,7 +1148,9 @@
           </div>
 
           <div class="mobile-menu-tabs-content">
-            <div class="mobile-menu-tab-pane tab-content mobile-main-menu active">
+            <div
+              class="mobile-menu-tab-pane tab-content mobile-main-menu active"
+            >
               <ul class="mobile-menu">
                 <li class="mobile-menu-item">
                   <a class="mobile-menu-link" href="index.html">الرئيسية</a>
@@ -1172,7 +1182,10 @@
               </ul>
             </div>
 
-            <div class="mobile-menu-tab-pane tab-content mobile-categories-menu" style="display: none;">
+            <div
+              class="mobile-menu-tab-pane tab-content mobile-categories-menu"
+              style="display: none"
+            >
               <ul class="mobile-menu">
                 <li class="mobile-menu-item">
                   <a class="mobile-menu-link" href="products.html">
@@ -1475,6 +1488,8 @@
         <div class="panel-container h-100">
           <div class="panel-head">
             <h2 class="head-title">سلة المشتريات</h2>
+
+            <p class="head-desc">(2 منتجات)</p>
             <span
               class="panel-close panel-responsive-btn panel-responsive-close"
               data-target="cart-panel"
@@ -1482,10 +1497,11 @@
               <i class="fas fa-times"></i>
             </span>
           </div>
+
           <div class="panel-body">
             <div class="cart-items">
               <div class="item-wrap">
-                <div class="item-img">
+                <div class="item-img contint-center">
                   <a class="d-block" href="#">
                     <img
                       class="img-fluid"
@@ -1494,172 +1510,22 @@
                     />
                   </a>
                 </div>
+
                 <div class="item-details">
                   <a class="item-name" href="#">اسم المنتج</a>
+
+                  <p class="item-pieces">3 قطع</p>
 
                   <p class="item-price">120 جنيه</p>
 
                   <button class="del-item" type="button">
                     <i class="fa-solid fa-trash-can"></i>
                   </button>
-
-                  <div class="counter-wrap">
-                    <div class="count-wrap form-group">
-                      <button
-                        type="button"
-                        class="count-btn count-add"
-                        data-type="plus"
-                      >
-                        <span class="count-icon add-icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            version="1.1"
-                            id="Capa_1"
-                            x="0px"
-                            y="0px"
-                            width="45px"
-                            height="45px"
-                            viewBox="0 0 45 45"
-                            style="enable-background: new 0 0 45 45"
-                            xml:space="preserve"
-                          >
-                            <g>
-                              <path
-                                d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141   c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27   c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435   c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z"
-                              ></path>
-                            </g>
-                          </svg>
-                        </span>
-                      </button>
-
-                      <input
-                        type="text"
-                        class="count-num form-control"
-                        value="1"
-                        step="1"
-                        inputmode="tel"
-                        min="1"
-                        max="10"
-                        autocomplete="off"
-                      />
-
-                      <button
-                        type="button"
-                        class="count-btn count-sub"
-                        data-type="minus"
-                      >
-                        <span class="count-icon sub-icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            version="1.1"
-                            id="Capa_1"
-                            x="0px"
-                            y="0px"
-                            viewBox="0 0 42 42"
-                            style="enable-background: new 0 0 42 42"
-                            xml:space="preserve"
-                          >
-                            <path
-                              d="M37.059,16H26H16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16h10h11.059C39.776,26,42,23.718,42,21  S39.776,16,37.059,16z"
-                            ></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </div>
-                  </div>
                 </div>
               </div>
+
               <div class="item-wrap">
-                <div class="item-img">
-                  <a class="d-block" href="#">
-                    <img
-                      class="img-fluid"
-                      src="assets/images/preview02.png"
-                      alt="productName"
-                    />
-                  </a>
-                </div>
-                <div class="item-details">
-                  <a class="item-name" href="#">اسم المنتج</a>
-
-                  <p class="item-price">120 جنيه</p>
-
-                  <button class="del-item" type="button">
-                    <i class="fa-solid fa-trash-can"></i>
-                  </button>
-
-                  <div class="counter-wrap">
-                    <div class="count-wrap form-group">
-                      <button
-                        type="button"
-                        class="count-btn count-add"
-                        data-type="plus"
-                      >
-                        <span class="count-icon add-icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            version="1.1"
-                            id="Capa_1"
-                            x="0px"
-                            y="0px"
-                            width="45px"
-                            height="45px"
-                            viewBox="0 0 45 45"
-                            style="enable-background: new 0 0 45 45"
-                            xml:space="preserve"
-                          >
-                            <g>
-                              <path
-                                d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141   c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27   c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435   c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z"
-                              ></path>
-                            </g>
-                          </svg>
-                        </span>
-                      </button>
-
-                      <input
-                        type="text"
-                        class="count-num form-control"
-                        value="1"
-                        step="1"
-                        inputmode="tel"
-                        min="1"
-                        max="10"
-                        autocomplete="off"
-                      />
-
-                      <button
-                        type="button"
-                        class="count-btn count-sub"
-                        data-type="minus"
-                      >
-                        <span class="count-icon sub-icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            version="1.1"
-                            id="Capa_1"
-                            x="0px"
-                            y="0px"
-                            viewBox="0 0 42 42"
-                            style="enable-background: new 0 0 42 42"
-                            xml:space="preserve"
-                          >
-                            <path
-                              d="M37.059,16H26H16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16h10h11.059C39.776,26,42,23.718,42,21  S39.776,16,37.059,16z"
-                            ></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item-wrap">
-                <div class="item-img">
+                <div class="item-img contint-center">
                   <a class="d-block" href="#">
                     <img
                       class="img-fluid"
@@ -1668,84 +1534,21 @@
                     />
                   </a>
                 </div>
+
                 <div class="item-details">
                   <a class="item-name" href="#">اسم المنتج</a>
+
+                  <p class="item-pieces">3 قطع</p>
 
                   <p class="item-price">120 جنيه</p>
 
                   <button class="del-item" type="button">
                     <i class="fa-solid fa-trash-can"></i>
                   </button>
-
-                  <div class="counter-wrap">
-                    <div class="count-wrap form-group">
-                      <button
-                        type="button"
-                        class="count-btn count-add"
-                        data-type="plus"
-                      >
-                        <span class="count-icon add-icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            version="1.1"
-                            id="Capa_1"
-                            x="0px"
-                            y="0px"
-                            width="45px"
-                            height="45px"
-                            viewBox="0 0 45 45"
-                            style="enable-background: new 0 0 45 45"
-                            xml:space="preserve"
-                          >
-                            <g>
-                              <path
-                                d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141   c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27   c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435   c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z"
-                              ></path>
-                            </g>
-                          </svg>
-                        </span>
-                      </button>
-
-                      <input
-                        type="text"
-                        class="count-num form-control"
-                        value="1"
-                        step="1"
-                        inputmode="tel"
-                        min="1"
-                        max="10"
-                        autocomplete="off"
-                      />
-
-                      <button
-                        type="button"
-                        class="count-btn count-sub"
-                        data-type="minus"
-                      >
-                        <span class="count-icon sub-icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            version="1.1"
-                            id="Capa_1"
-                            x="0px"
-                            y="0px"
-                            viewBox="0 0 42 42"
-                            style="enable-background: new 0 0 42 42"
-                            xml:space="preserve"
-                          >
-                            <path
-                              d="M37.059,16H26H16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16h10h11.059C39.776,26,42,23.718,42,21  S39.776,16,37.059,16z"
-                            ></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
+
             <div class="panel-actions">
               <div class="total-cart">
                 <span class="total-title">المجموع</span>
