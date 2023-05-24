@@ -11,12 +11,30 @@ $('a[href="#"]').click(function ($) {
   $.preventDefault();
 });
 
-/*------------- add-to-fav --------------*/
+/*--------------- hero section height -------------*/
 
-// slect all fav-btn
+// $(".nav-wraper").css("height", $(".hero-section").outerHeight());
+
+const navHeight = $(".nav-wraper").outerHeight();
+
+$(".home-hero").css("height", "calc(100vh - " + navHeight + "px)");
+
+/*------------- add-to-fav --------------*/
 
 $(".add-to-fav").on("click", function () {
   $(this).toggleClass("active");
+});
+
+// add to cart
+
+$(".add-to-cart-btn").on("click", function () {
+  $(".cart-alert").addClass("active");
+  $(this).addClass("added");
+
+  setTimeout(function () {
+    $(".cart-alert").removeClass("active");
+    $(".add-to-cart-btn").removeClass("added");
+  }, 3000);
 });
 
 /*------------- #loading-overlay-btn function --------------*/
