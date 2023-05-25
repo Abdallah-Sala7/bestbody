@@ -1058,9 +1058,9 @@ header .header-item .header-title {
 @media (max-width: 576px) {
   .product-card .product-card-body {
     display:flex ;
-    flex-decoration:column ;
+    flex-direction: column;
     justify-content:center;
-    align-item:center 
+    align-items:center 
   } 
   .all-products-wrap .product-card {
     padding: 5px;
@@ -1091,6 +1091,7 @@ header .header-item .header-title {
     height: 200px;
     padding: 1.5rem 0.5rem 0.5rem;
   }
+  
 }
 
 @media (min-width: 640px) {
