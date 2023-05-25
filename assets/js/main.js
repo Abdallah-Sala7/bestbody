@@ -15,9 +15,9 @@ $('a[href="#"]').click(function ($) {
 
 // $(".nav-wraper").css("height", $(".hero-section").outerHeight());
 
-const navHeight = $(".nav-wraper").outerHeight();
+// const navHeight = $(".nav-wraper").outerHeight();
 
-$(".home-hero").css("height", "calc(100vh - " + navHeight + "px)");
+// $(".home-hero").css("height", "calc(100vh - " + navHeight + "px)");
 
 /*------------- add-to-fav --------------*/
 
@@ -28,13 +28,11 @@ $(".add-to-fav").on("click", function () {
 // add to cart
 
 $(".add-to-cart-btn").on("click", function () {
-  $(".cart-alert").addClass("active");
-  $(this).addClass("added");
-
-  setTimeout(function () {
-    $(".cart-alert").removeClass("active");
-    $(".add-to-cart-btn").removeClass("added");
-  }, 3000);
+  $(this).addClass("loading");
+  setTimeout(() => {
+    $(this).removeClass("loading");
+    $(this).toggleClass("active");
+  }, 2000);
 });
 
 /*------------- #loading-overlay-btn function --------------*/
@@ -281,4 +279,9 @@ $(".password-field .eye-icon").on("click", function () {
 /*------------- fix viewport --------------*/
 
 let vh = window.innerHeight * 0.01;
+let navHeight = $(".nav-wraper").outerHeight();
+let toolBarHeight = $(".tool-bar").outerHeight();
+
 document.documentElement.style.setProperty("--vh", `${vh}px`);
+document.documentElement.style.setProperty("--nav-h", `${navHeight}px`);
+document.documentElement.style.setProperty("--tool-bar-h", `${toolBarHeight}px`);

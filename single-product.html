@@ -12,28 +12,30 @@
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
-    />
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
-
-    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
-
-    <link
-      rel="stylesheet"
       type="text/css"
       href="assets/css/bootstrap.min.css"
     />
+
     <link rel="stylesheet" type="text/css" href="assets/css/all.min.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Cairo"
     />
-    <link
-      rel="icon"
-      href="assets/images/logo.svg"
-      sizes="16x16 32x32 48x48 64x64"
-    />
+
+    <link rel="icon" href="img/logo.png" sizes="16x16 32x32 48x48 64x64" />
+
     <link rel="stylesheet" type="text/css" href="assets/css/swiper.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
 
@@ -125,9 +127,9 @@
                 </a>
               </div>
 
-              <div class="brand-logo">
+              <a href="index.html" class="brand-logo">
                 <img src="assets/images/logo.svg" alt="logo" />
-              </div>
+              </a>
 
               <a
                 href="#"
@@ -407,80 +409,32 @@
 
                     <li class="single-product-list-item">
                       <span>الكميه :</span>
-                      <!-- <div class="counter-wrap">
-                        <div class="count-wrap form-group">
-                          <button
-                            type="button"
-                            class="count-btn count-add"
-                            data-type="plus"
-                          >
-                            <span class="count-icon add-icon">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                version="1.1"
-                                id="Capa_1"
-                                x="0px"
-                                y="0px"
-                                width="45px"
-                                height="45px"
-                                viewBox="0 0 45 45"
-                                style="enable-background: new 0 0 45 45"
-                                xml:space="preserve"
-                              >
-                                <g>
-                                  <path
-                                    d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141   c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27   c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435   c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z"
-                                  ></path>
-                                </g>
-                              </svg>
-                            </span>
-                          </button>
-
-                          <input
-                            type="text"
-                            class="count-num form-control"
-                            value="1"
-                            step="1"
-                            inputmode="tel"
-                            min="1"
-                            max="10"
-                            autocomplete="off"
-                          />
-
-                          <button
-                            type="button"
-                            class="count-btn count-sub"
-                            data-type="minus"
-                          >
-                            <span class="count-icon sub-icon">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                version="1.1"
-                                id="Capa_1"
-                                x="0px"
-                                y="0px"
-                                viewBox="0 0 42 42"
-                                style="enable-background: new 0 0 42 42"
-                                xml:space="preserve"
-                              >
-                                <path
-                                  d="M37.059,16H26H16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16h10h11.059C39.776,26,42,23.718,42,21  S39.776,16,37.059,16z"
-                                ></path>
-                              </svg>
-                            </span>
-                          </button>
-                        </div>
-                      </div> -->
+                      <span> 1 </span>
                     </li>
                   </ul>
 
                   <div class="single-product-btns">
-                    <a href="#" class="custom-btn"> اضف الي السله </a>
+                    <a
+                      href="#"
+                      class="custom-btn add-to-cart-btn contint-center panel-responsive-btn panel-responsive-open"
+                      data-target="cart-panel"
+                      title="add to cart"
+                    >
+                      <span> اضف الي السله </span>
 
-                    <a href="#" class="single-product-fav-btn contint-center">
-                      <i class="far fa-heart"></i>
+                      <span> في السلة <i class="fa fa-check"></i> </span>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="add-to-fav single-product-fav-btn contint-center"
+                    >
+                      <span>
+                        <i class="far fa-heart"></i>
+                      </span>
+                      <span>
+                        <i class="fas fa-heart"></i>
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -649,9 +603,7 @@
                       >
                         <span> اضف الي السله </span>
 
-                        <div class="add-to-cart-loading contint-center">
-                          <div class="spinner-border" role="status"></div>
-                        </div>
+                        <span> في السلة <i class="fa fa-check"></i> </span>
                       </a>
                     </div>
                   </div>
@@ -708,9 +660,7 @@
                       >
                         <span> اضف الي السله </span>
 
-                        <div class="add-to-cart-loading contint-center">
-                          <div class="spinner-border" role="status"></div>
-                        </div>
+                        <span> في السلة <i class="fa fa-check"></i> </span>
                       </a>
                     </div>
                   </div>
@@ -767,9 +717,7 @@
                       >
                         <span> اضف الي السله </span>
 
-                        <div class="add-to-cart-loading contint-center">
-                          <div class="spinner-border" role="status"></div>
-                        </div>
+                        <span> في السلة <i class="fa fa-check"></i> </span>
                       </a>
                     </div>
                   </div>
@@ -826,9 +774,7 @@
                       >
                         <span> اضف الي السله </span>
 
-                        <div class="add-to-cart-loading contint-center">
-                          <div class="spinner-border" role="status"></div>
-                        </div>
+                        <span> في السلة <i class="fa fa-check"></i> </span>
                       </a>
                     </div>
                   </div>
@@ -885,9 +831,7 @@
                       >
                         <span> اضف الي السله </span>
 
-                        <div class="add-to-cart-loading contint-center">
-                          <div class="spinner-border" role="status"></div>
-                        </div>
+                        <span> في السلة <i class="fa fa-check"></i> </span>
                       </a>
                     </div>
                   </div>
@@ -944,9 +888,7 @@
                       >
                         <span> اضف الي السله </span>
 
-                        <div class="add-to-cart-loading contint-center">
-                          <div class="spinner-border" role="status"></div>
-                        </div>
+                        <span> في السلة <i class="fa fa-check"></i> </span>
                       </a>
                     </div>
                   </div>
@@ -966,16 +908,6 @@
       </section>
 
       <!----------- start page absolute panal component-------------->
-      <!-- .cart alert -->
-      <div
-        class="alert alert-success cart-alert d-flex align-items-center"
-        role="alert"
-      >
-        <span class="contint-center alert-icon">
-          <i class="fa-solid fa-check"></i>
-        </span>
-        <div>تمت الاضافه الي السله بنجاح</div>
-      </div>
       <!---- mobile menu-- -->
       <div
         class="mobile-menu-wrapper panel-responsive-item mobile-menu-panel noScroll"
