@@ -89,7 +89,6 @@ p {
   margin-bottom: 0;
 }
 
-
 /** general styles **/
 
 .contint-between {
@@ -1036,13 +1035,23 @@ header .header-item .header-title {
 }
 
 @media (max-width: 576px) {
+  .product-card .product-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .all-products-wrap .product-card {
-    padding: 10px;
+    padding: 5px;
   }
   .all-products-wrap .product-card .product-card-body .product-price-box,
   .all-products-wrap .product-card .product-card-body .product-title,
   .all-products-wrap .product-card .product-card-body .product-rating {
     margin-bottom: 0.5rem;
+  }
+
+  .all-products-wrap .product-card .product-card-body .product-rating {
+    display: none;
   }
 
   .all-products-wrap .product-card .product-card-body .product-title {
@@ -1052,11 +1061,12 @@ header .header-item .header-title {
   .all-products-wrap .product-card .product-card-body .add-to-cart-btn {
     height: 37px;
     border-radius: 7px;
+    max-width: 100%;
   }
 
   .all-products-wrap .product-card .product-img-contint {
     height: 200px;
-    padding: 2rem 0.5rem 0.5rem;
+    padding: 1.5rem 0.5rem 0.5rem;
   }
 }
 
@@ -1691,25 +1701,29 @@ input[type="checkbox"]:checked::before {
   gap: 0.5rem;
 }
 
-.single-product-info .single-product-list .single-product-list-item{
+.single-product-info .single-product-list .single-product-list-item {
   display: flex;
   align-items: center;
   gap: 0.25rem;
 }
 
-.single-product-info .single-product-list .single-product-list-item > span:first-child {
+.single-product-info
+  .single-product-list
+  .single-product-list-item
+  > span:first-child {
   font-size: 1.25rem;
   font-weight: 400;
   color: var(--clr-2);
 }
 
-.single-product-info .single-product-lis .single-product-list-item > span:last-child {
+.single-product-info
+  .single-product-lis
+  .single-product-list-item
+  > span:last-child {
   font-size: 1rem;
   font-weight: 400;
   color: var(--clr-4);
 }
-
-
 
 .single-product-list-item .count-wrap .count-btn:hover {
   background-color: var(--clr-1-hover);
@@ -1735,7 +1749,7 @@ input[type="checkbox"]:checked::before {
 .single-product-list-item .count-wrap .count-num {
   text-align: center;
   font-weight: bold;
-  border-radius:5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
   border-width: 1px 0 1px 1px;
   width: 60px;
   height: 30px;
@@ -1770,13 +1784,6 @@ input[type="checkbox"]:checked::before {
   transition: all 0.3s ease;
   border: none;
 }
-
-
-
-
-
-
-
 
 .single-product-btns {
   display: flex;
