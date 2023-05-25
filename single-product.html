@@ -409,7 +409,42 @@
 
                     <li class="single-product-list-item">
                       <span>الكميه :</span>
-                      <span> 1 </span>
+                      <div class="counter-wrap">
+                        <div class="count-wrap form-group">
+                          <div class="contint-center flex-column">
+                            <button
+                              type="button"
+                              class="count-btn count-add"
+                              data-type="plus"
+                            >
+                              <span class="count-icon add-icon">
+                                <i class="fa-solid fa-chevron-up"></i>
+                              </span>
+                            </button>
+
+                            <button
+                              type="button"
+                              class="count-btn count-sub"
+                              data-type="minus"
+                            >
+                              <span class="count-icon sub-icon">
+                                <i class="fa-solid fa-chevron-down"></i>
+                              </span>
+                            </button>
+                          </div>
+
+                          <input
+                            type="text"
+                            class="count-num form-control"
+                            value="1"
+                            step="1"
+                            inputmode="tel"
+                            min="1"
+                            max="10"
+                            autocomplete="off"
+                          />
+                        </div>
+                      </div>
                     </li>
                   </ul>
 

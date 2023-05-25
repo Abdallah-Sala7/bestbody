@@ -32,7 +32,7 @@ $(".add-to-cart-btn").on("click", function () {
   setTimeout(() => {
     $(this).removeClass("loading");
     $(this).toggleClass("active");
-  }, 2000);
+  }, 1000);
 });
 
 /*------------- #loading-overlay-btn function --------------*/
