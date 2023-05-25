@@ -11,13 +11,23 @@ $('a[href="#"]').click(function ($) {
   $.preventDefault();
 });
 
-/*--------------- hero section height -------------*/
+/*--------------- add promo code -------------*/
+$(".promo-code-btn").click(function () {
+  if ($(".promo-code-btn").hasClass("validate")) {
+    $(".promo-code-btn").removeClass("validate");
+    $(".promo-code-input").removeClass("active");
+  } else {
+    $(".promo-code-btn").addClass("onclic", 250, validate());
+  }
+});
 
-// $(".nav-wraper").css("height", $(".hero-section").outerHeight());
-
-// const navHeight = $(".nav-wraper").outerHeight();
-
-// $(".home-hero").css("height", "calc(100vh - " + navHeight + "px)");
+function validate() {
+  setTimeout(function () {
+    $(".promo-code-btn").removeClass("onclic");
+    $(".promo-code-btn").addClass("validate");
+    $(".promo-code-input").addClass("active");
+  }, 2250);
+}
 
 /*------------- add-to-fav --------------*/
 
@@ -284,4 +294,7 @@ let toolBarHeight = $(".tool-bar").outerHeight();
 
 document.documentElement.style.setProperty("--vh", `${vh}px`);
 document.documentElement.style.setProperty("--nav-h", `${navHeight}px`);
-document.documentElement.style.setProperty("--tool-bar-h", `${toolBarHeight}px`);
+document.documentElement.style.setProperty(
+  "--tool-bar-h",
+  `${toolBarHeight}px`
+);

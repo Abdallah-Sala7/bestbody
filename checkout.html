@@ -117,9 +117,9 @@
                 </a>
               </div>
 
-              <div class="brand-logo">
+              <a href="index.html" class="brand-logo">
                 <img src="assets/images/logo.svg" alt="logo" />
-              </div>
+              </a>
 
               <a
                 href="#"
@@ -130,17 +130,13 @@
               </a>
             </div>
           </div>
-
-          <!-- <div class="product">
-            <img src="assets/images/product.png" alt="product" />
-          </div> -->
         </div>
       </nav>
 
       <header>
         <div class="container">
           <div class="header-contint contint-between">
-            <a href="#" class="header-item">
+            <a href="products.html" class="header-item">
               <img
                 src="assets/images/icons/powder.svg"
                 alt="powder"
@@ -150,7 +146,7 @@
               <h1 class="header-title">البروتين</h1>
             </a>
 
-            <a href="#" class="header-item">
+            <a href="products.html" class="header-item">
               <img
                 src="assets/images/icons/acid.svg"
                 alt="acid"
@@ -160,7 +156,7 @@
               <h1 class="header-title">الأحماض الأمينية</h1>
             </a>
 
-            <a href="#" class="header-item">
+            <a href="products.html" class="header-item">
               <img
                 src="assets/images/icons/weight.svg"
                 alt="weight"
@@ -170,7 +166,7 @@
               <h1 class="header-title">الوزن</h1>
             </a>
 
-            <a href="#" class="header-item">
+            <a href="products.html" class="header-item">
               <img
                 src="assets/images/icons/carnitine.svg"
                 alt="carnitine"
@@ -180,7 +176,7 @@
               <h1 class="header-title">الكارنتين</h1>
             </a>
 
-            <a href="#" class="header-item">
+            <a href="products.html" class="header-item">
               <img
                 src="assets/images/icons/performance.svg"
                 alt="powder"
@@ -190,7 +186,7 @@
               <h1 class="header-title">الأداء</h1>
             </a>
 
-            <a href="#" class="header-item">
+            <a href="products.html" class="header-item">
               <img
                 src="assets/images/icons/creatine.svg"
                 alt="creatine"
@@ -200,7 +196,7 @@
               <h1 class="header-title">الكرياتين</h1>
             </a>
 
-            <a href="#" class="header-item">
+            <a href="products.html" class="header-item">
               <img
                 src="assets/images/icons/food.svg"
                 alt="food"
@@ -210,7 +206,7 @@
               <h1 class="header-title">الانظمه الغذائيه</h1>
             </a>
 
-            <a href="#" class="header-item">
+            <a href="products.html" class="header-item">
               <img
                 src="assets/images/icons/sports.svg"
                 alt="sports"
@@ -220,7 +216,7 @@
               <h1 class="header-title">المنافسات الرياضيه</h1>
             </a>
 
-            <a href="#" class="header-item">
+            <a href="products.html" class="header-item">
               <img
                 src="assets/images/icons/fitness.svg"
                 alt="fitness"
@@ -235,422 +231,167 @@
     </div>
 
     <main>
-      <section class="all-products section-style section-style-top">
+      <section class="checkout-section section-style section-style-top">
         <div class="container">
-          <div class="all-products-wrap">
-            <div class="all-products-filter panel-responsive-item filter-panal">
-              <button
-                class="close-filter panel-responsive-btn panel-responsive-close"
-                data-target="filter-panal"
-              >
-                <i class="fa-solid fa-close"></i>
-              </button>
+          <div class="row gy-4">
+            <div class="col-12 col-md-7">
+              <div class="bills-details">
+                <h1 class="main-title">تفاصيل الفاتوره</h1>
 
-              <div class="filter-header contint-between mb-3">
-                <span>الفلتر</span>
+                <div class="checkout-form">
+                  <form action="">
+                    <div class="form-group">
+                      <label for="name">الاسم</label>
+                      <input
+                        type="text"
+                        required
+                        class="form-control"
+                        id="name"
+                      />
+                    </div>
 
-                <i class="fa-solid fa-filter"></i>
+                    <div class="form-group">
+                      <label for="phone"> رقم الهاتف </label>
+                      <input
+                        type="number"
+                        required
+                        class="form-control"
+                        id="phone"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="email"> البريد الالكتروني </label>
+                      <input
+                        type="email"
+                        required
+                        class="form-control"
+                        id="email"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="country"> الدوله </label>
+                      <input
+                        type="text"
+                        required
+                        class="form-control"
+                        id="country"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="city"> المدينه </label>
+                      <input
+                        type="text"
+                        required
+                        class="form-control"
+                        id="city"
+                      />
+                    </div>
+
+                    <div class="form-group optional">
+                      <label for="city2"> المدينه (اختياري) </label>
+                      <input type="text" class="form-control" id="city2" />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="address"> العنوان </label>
+                      <input
+                        type="text"
+                        required
+                        class="form-control"
+                        id="address"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="address2 optional"> العنوان (اختياري)</label>
+                      <input type="text" class="form-control" id="address2" />
+                    </div>
+                  </form>
+                </div>
               </div>
 
-              <div class="accordion" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                    <button
-                      class="accordion-button contint-center"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapseOne"
-                      aria-expanded="true"
-                      aria-controls="panelsStayOpen-collapseOne"
-                    >
-                      <img
-                        src="assets/images/icons/all_icon.svg"
-                        alt="all category"
-                      />
-                      <span> كل الاقسام </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="panelsStayOpen-collapseOne"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="panelsStayOpen-headingOne"
-                  >
-                    <div class="accordion-body">
-                      <div class="check-item">
-                        <input type="checkbox" id="protein" />
-                        <label for="protein">البروتين</label>
-                      </div>
+              <div class="payment-method">
+                <h2 class="main-title">طريقه الدفع</h2>
 
-                      <div class="check-item">
-                        <input type="checkbox" id="amino" />
-                        <label for="amino"> الأحماض الأمينية </label>
-                      </div>
-
-                      <div class="check-item">
-                        <input type="checkbox" id="weight" />
-                        <label for="weight"> الوزن </label>
-                      </div>
-
-                      <div class="check-item">
-                        <input type="checkbox" id="creatine" />
-                        <label for="creatine"> الكرياتين </label>
-                      </div>
-
-                      <div class="check-item">
-                        <input type="checkbox" id="combinations" />
-                        <label for="combinations"> المنافسات الرياضيه </label>
-                      </div>
-
-                      <div class="check-item">
-                        <input type="checkbox" id="food" />
-                        <label for="food"> الانظمه الغذائيه </label>
-                      </div>
-                    </div>
+                <div class="payment-chose contint-between">
+                  <div class="chose-payment-box contint-center">
+                    <input type="radio" name="payment" id="payment1" />
+                    <label class="contint-center" for="payment1">الدفع عند الاستلام</label>
                   </div>
-                </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="panelsStayOpen-collapseTwo"
-                    >
-                      <img
-                        src="assets/images/icons/kg_icon.svg"
-                        alt="all category"
-                      />
-                      <span> الوزن </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="panelsStayOpen-collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingTwo"
-                  >
-                    <div class="accordion-body">
-                      <div class="check-item">
-                        <input type="checkbox" id="creatine2" />
-                        <label for="creatine2"> الكرياتين </label>
-                      </div>
-
-                      <div class="check-item">
-                        <input type="checkbox" id="combinations2" />
-                        <label for="combinations2"> المنافسات الرياضيه </label>
-                      </div>
-
-                      <div class="check-item">
-                        <input type="checkbox" id="food2" />
-                        <label for="food2"> الانظمه الغذائيه </label>
-                      </div>
-                    </div>
+                  <div class="chose-payment-box contint-center">
+                    <input type="radio" name="payment" id="payment2" />
+                    <label class="contint-center" for="payment2">
+                      الدفع اونلاين
+                      <img src="assets/images/master.svg" alt="master" />
+                      <img src="assets/images/visa.svg" alt="visa" />
+                    </label>
                   </div>
-                </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapseThree"
-                      aria-expanded="false"
-                      aria-controls="panelsStayOpen-collapseThree"
-                    >
-                      <img
-                        src="assets/images/icons/kg_icon.svg"
-                        alt="all category"
-                      />
-                      <span> الوزن </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="panelsStayOpen-collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingTwo"
-                  >
-                    <div class="accordion-body">
-                      <div class="check-item">
-                        <input type="checkbox" id="creatine3" />
-                        <label for="creatine3"> الكرياتين </label>
-                      </div>
+                  <div class="chose-payment-box contint-center">
+                    <input type="radio" name="payment" id="payment3" />
+                    <label class="contint-center" for="payment3">
+                      الدفع عن طريق value
 
-                      <div class="check-item">
-                        <input type="checkbox" id="combinations3" />
-                        <label for="combinations3"> المنافسات الرياضيه </label>
-                      </div>
-
-                      <div class="check-item">
-                        <input type="checkbox" id="food3" />
-                        <label for="food3"> الانظمه الغذائيه </label>
-                      </div>
-                    </div>
+                      <img src="assets/images/valu.svg" alt="valu" />
+                    </label>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="all-products-contint">
-              <div
-                class="all-products-header contint-between mb-3 gap-3 flex-wrap"
-              >
-                <h3 class="all-products-title">عدد المنتجات 100</h3>
+            <div class="col-12 col-md-5">
+              <div class="user-details">
+                <h2 class="user-details-title main-title">معلومات المشتري</h2>
 
-                <div class="all-products-header-options contint-center gap-3">
-                  <button
-                    class="product-filter-btn contint-center panel-responsive-btn panel-responsive-open"
-                    data-target="filter-panal"
-                  >
-                    <i class="fa-solid fa-filter"></i>
-                    <span>فلتره</span>
-                  </button>
+                <div class="user-details-info">
+                  <h3 class="user-details-head">المنتجات</h3>
 
-                  <select
-                    name="sort"
-                    id="sort"
-                    class="form-select form-select-lg sort-select"
-                    aria-label=".form-select-lg example"
-                  >
-                    <option value="" disabled>ترتيب حسب</option>
-                    <option value="1">الاحدث</option>
-                    <option value="2">الاقدم</option>
-                    <option value="3">الاعلي سعر</option>
-                    <option value="4">الاقل سعر</option>
-                  </select>
-                </div>
-              </div>
+                  <ul class="user-details-list">
+                    <li class="contint-between align-items-start">
+                      <span> هنا يكون اسم المنتج </span>
 
-              <div class="row gx-2 gy-2">
-                <div class="col-6 col-xl-4">
-                  <div class="product-card">
-                    <div class="product-img-contint contint-center flex-column">
-                      <a href="#" class="add-to-fav contint-center">
-                        <span>
-                          <i class="far fa-heart"></i>
-                        </span>
-                        <span>
-                          <i class="fas fa-heart"></i>
-                        </span>
-                      </a>
+                      <span> 1 </span>
 
-                      <a href="single-product.html" class="product-img">
-                        <img
-                          src="assets/images/product.png"
-                          alt="product name"
-                          loading="lazy"
-                      /></a>
+                      <span> 100 جنيه </span>
+                    </li>
 
-                      <p class="product-sell align-self-end">خصم 20%</p>
-                    </div>
+                    <li class="contint-between align-items-start">
+                      <span> هنا يكون اسم المنتج </span>
 
-                    <div class="product-card-body">
-                      <div class="product-price-box">
-                        <p class="product-price">200 جنيه</p>
-                        <p class="product-old-price">250 جنيه</p>
-                      </div>
+                      <span> 2 </span>
 
-                      <a href="single-product.html" class="product-title"
-                        >اسم المنتج يكون هنا</a
-                      >
+                      <span> 150 جنيه </span>
+                    </li>
 
-                      <div class="product-rating">
-                        <span class="product-rating-stars contint-center">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
-                        </span>
+                    <li class="contint-between align-items-start list-info">
+                      <span> المجموع </span>
 
-                        <span class="product-rating-count">( 5 تقييم )</span>
-                      </div>
+                      <span> 30 جنيه </span>
+                    </li>
 
-                      <a
-                        href="#"
-                        class="custom-btn add-to-cart-btn contint-center"
-                        title="add to cart"
-                      >
-                        <span> اضف الي السله </span>
+                    <li class="contint-between align-items-start list-info">
+                      <span> الشحن </span>
 
-                        <span> في السلة <i class="fa fa-check"></i> </span>
-                      </a>
-                    </div>
-                  </div>
+                      <span> 30 جنيه </span>
+                    </li>
+
+                    <li class="contint-between align-items-start list-info">
+                      <span> المجموع الكلي </span>
+
+                      <span> 5020 جنيه </span>
+                    </li>
+                  </ul>
                 </div>
 
-                <div class="col-6 col-xl-4">
-                  <div class="product-card">
-                    <div class="product-img-contint contint-center flex-column">
-                      <a href="#" class="add-to-fav contint-center">
-                        <span>
-                          <i class="far fa-heart"></i>
-                        </span>
-                        <span>
-                          <i class="fas fa-heart"></i>
-                        </span>
-                      </a>
+                <p class="user-info-desc">
+                  جميع المنتجات التي تم طلبها سوف تصل اليك في غضون 3 ايام عمل
+                </p>
 
-                      <a href="single-product.html" class="product-img">
-                        <img
-                          src="assets/images/product.png"
-                          alt="product name"
-                          loading="lazy"
-                      /></a>
-
-                      <p class="product-sell align-self-end">خصم 20%</p>
-                    </div>
-
-                    <div class="product-card-body">
-                      <div class="product-price-box">
-                        <p class="product-price">200 جنيه</p>
-                        <p class="product-old-price">250 جنيه</p>
-                      </div>
-
-                      <a href="single-product.html" class="product-title"
-                        >اسم المنتج يكون هنا</a
-                      >
-
-                      <div class="product-rating">
-                        <span class="product-rating-stars contint-center">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
-                        </span>
-
-                        <span class="product-rating-count">( 5 تقييم )</span>
-                      </div>
-
-                      <a
-                        href="#"
-                        class="custom-btn add-to-cart-btn contint-center"
-                        title="add to cart"
-                      >
-                        <span> اضف الي السله </span>
-
-                        <span> في السلة <i class="fa fa-check"></i> </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-6 col-xl-4">
-                  <div class="product-card">
-                    <div class="product-img-contint contint-center flex-column">
-                      <a href="#" class="add-to-fav contint-center">
-                        <span>
-                          <i class="far fa-heart"></i>
-                        </span>
-                        <span>
-                          <i class="fas fa-heart"></i>
-                        </span>
-                      </a>
-
-                      <a href="single-product.html" class="product-img">
-                        <img
-                          src="assets/images/product.png"
-                          alt="product name"
-                          loading="lazy"
-                      /></a>
-
-                      <p class="product-sell align-self-end">خصم 20%</p>
-                    </div>
-
-                    <div class="product-card-body">
-                      <div class="product-price-box">
-                        <p class="product-price">200 جنيه</p>
-                        <p class="product-old-price">250 جنيه</p>
-                      </div>
-
-                      <a href="single-product.html" class="product-title"
-                        >اسم المنتج يكون هنا</a
-                      >
-
-                      <div class="product-rating">
-                        <span class="product-rating-stars contint-center">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
-                        </span>
-
-                        <span class="product-rating-count">( 5 تقييم )</span>
-                      </div>
-
-                      <a
-                        href="#"
-                        class="custom-btn add-to-cart-btn contint-center"
-                        title="add to cart"
-                      >
-                        <span> اضف الي السله </span>
-
-                        <span> في السلة <i class="fa fa-check"></i> </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-6 col-xl-4">
-                  <div class="product-card">
-                    <div class="product-img-contint contint-center flex-column">
-                      <a href="#" class="add-to-fav contint-center">
-                        <span>
-                          <i class="far fa-heart"></i>
-                        </span>
-                        <span>
-                          <i class="fas fa-heart"></i>
-                        </span>
-                      </a>
-
-                      <a href="single-product.html" class="product-img">
-                        <img
-                          src="assets/images/product.png"
-                          alt="product name"
-                          loading="lazy"
-                      /></a>
-
-                      <p class="product-sell align-self-end">خصم 20%</p>
-                    </div>
-
-                    <div class="product-card-body">
-                      <div class="product-price-box">
-                        <p class="product-price">200 جنيه</p>
-                        <p class="product-old-price">250 جنيه</p>
-                      </div>
-
-                      <a href="single-product.html" class="product-title"
-                        >اسم المنتج يكون هنا</a
-                      >
-
-                      <div class="product-rating">
-                        <span class="product-rating-stars contint-center">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
-                        </span>
-
-                        <span class="product-rating-count">( 5 تقييم )</span>
-                      </div>
-
-                      <a
-                        href="#"
-                        class="custom-btn add-to-cart-btn contint-center"
-                        title="add to cart"
-                      >
-                        <span> اضف الي السله </span>
-
-                        <span> في السلة <i class="fa fa-check"></i> </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <a href="#" class="custom-btn"> اتمام الطلب </a>
               </div>
             </div>
           </div>
@@ -659,6 +400,7 @@
 
       <!----------- start page absolute panal component-------------->
       <!---- mobile menu-- -->
+
       <div
         class="mobile-menu-wrapper panel-responsive-item mobile-menu-panel noScroll"
       >
@@ -827,6 +569,7 @@
           ><i class="fas fa-times"></i
         ></a>
       </div>
+
       <!-- Start toolbar  -->
       <div class="tool-bar">
         <div class="tool">
@@ -1091,10 +834,10 @@
                 <span class="total-val">2500 جنيه</span>
               </div>
               <div class="actions-btns">
-                <a class="action-btn cart-link" href="finish-order.html"
+                <a class="action-btn cart-link" href="cart.html"
                   >عرض السلة</a
                 >
-                <a class="action-btn checkout-link" href="finish-order.html"
+                <a class="action-btn checkout-link" href="checkout.html"
                   >الي الدفع</a
                 >
               </div>
@@ -1127,12 +870,13 @@
         </div>
       </div>
       <!-- End search-popup  -->
-
       <!-- Start side-overlay  -->
+
       <div
         class="side-overlay panel-responsive-btn panel-responsive-close"
         data-target="for-all"
       ></div>
+
       <!-- End side-overlay  -->
     </main>
 
@@ -1240,103 +984,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- matchHeight jquery plugin   -->
     <script src="assets/js/jquery.matchHeight-min.js"></script>
-    <!-- swiper js   -->
-    <script src="assets/js/swiper.js"></script>
-    <!-- bootstrap-datepicker js -->
-    <script src="assets/js/bootstrap-datepicker.min.js"></script>
     <!-- main style js   -->
     <script src="assets/js/main.js"></script>
-    <script>
-      /*------------- #duplicated-slider-1 --------------*/
-
-      $(".duplicated-slider-1").each(function (index, element) {
-        var $this = $(this);
-        $this.addClass("instance-" + index);
-        $this
-          .parent()
-          .find(".prev-btn")
-          .addClass("prev-btn-" + index);
-        $this
-          .parent()
-          .find(".next-btn")
-          .addClass("next-btn-" + index);
-        var swiper = new Swiper(".instance-" + index, {
-          slidesPerView: 1,
-          spaceBetween: 24,
-          grabCursor: true,
-          scrollbar: {
-            el: ".duplicated-slider-1 .swiper-scrollbar",
-            hide: true,
-          },
-          a11y: false,
-          navigation: {
-            prevEl: ".prev-btn-" + index,
-            nextEl: ".next-btn-" + index,
-          },
-          breakpoints: {
-            768: {
-              slidesPerView: 2,
-            },
-            1200: {
-              slidesPerView: 3,
-            },
-          },
-        });
-      });
-
-      /*------------- #featured-products-slider --------------*/
-
-      var swiper = new Swiper(".products-slider", {
-        slidesPerView: 1,
-        spaceBetween: 12,
-        grabCursor: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        scrollbar: {
-          el: ".products-slider .swiper-scrollbar",
-          hide: true,
-        },
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-          },
-          992: {
-            slidesPerView: 3,
-          },
-          1200: {
-            slidesPerView: 4,
-          },
-          1400: {
-            slidesPerView: 5,
-          },
-        },
-        a11y: false,
-      });
-
-      /*------------- #hero-slider  --------------*/
-
-      var swiper = new Swiper(".hero-slider", {
-        slidesPerView: 1,
-        spaceBetween: 24,
-        grabCursor: true,
-        pagination: {
-          el: ".swiper-pagination",
-          type: "bullets",
-          clickable: true,
-        },
-        scrollbar: {
-          el: ".hero-slider .swiper-scrollbar",
-          hide: true,
-        },
-        a11y: false,
-        autoplay: {
-          delay: 10000,
-          disableOnInteraction: true,
-        },
-        loop: true,
-      });
-    </script>
   </body>
 </html>
