@@ -45,6 +45,16 @@ $(".add-to-cart-btn").on("click", function () {
   }, 1000);
 });
 
+// reset password
+
+$(".send-btn").on("click", function () {
+  $(this).addClass("loading");
+  setTimeout(() => {
+    $(this).removeClass("loading");
+    $(".forget-form").addClass("active");
+  }, 1000);
+});
+
 /*------------- #loading-overlay-btn function --------------*/
 
 $(".loading-btn").each(function () {
@@ -135,14 +145,14 @@ $(".toggle-modal-btn").click(function () {
 
 $(window).scroll(function () {
   if ($(this).scrollTop() > 200) {
-    $(".scrollup").addClass("show");
+    $(".scroll-top").addClass("show");
   } else {
-    $(".scrollup").removeClass("show");
-    $(".scrollup").removeClass("active");
+    $(".scroll-top").removeClass("show");
+    $(".scroll-top").removeClass("active");
   }
 });
 
-$(".scrollup").click(function (e) {
+$(".scroll-top").click(function (e) {
   e.preventDefault();
 
   $(this).addClass("active");
