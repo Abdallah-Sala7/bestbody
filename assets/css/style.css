@@ -282,6 +282,10 @@ input[type="number"] {
   color: #fff;
 }
 
+.nav-top .nav-top-social .nav-link:hover {
+  color: var(--clr-4-hover);
+}
+
 .nav-top .nav-top-social .nav-link:not(:last-child) {
   border-left: 1px solid #fff;
 }
@@ -1822,7 +1826,7 @@ input[type="checkbox"]:checked::before {
 .single-product-info .single-product-title {
   font-size: var(--title-2);
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: var(--clr-2);
 }
 
@@ -2735,12 +2739,21 @@ input[type="radio"]:checked::before {
   border-bottom: 1px solid #e1e1e1;
 }
 
+.user-details .user-details-info .user-details-list li:last-child span{
+  font-weight: bold;
+  font-size: var(--title-8);
+}
+
 .user-details .user-details-info .user-details-list li span {
   color: var(--clr-4);
 }
 
 .user-details .user-details-info .user-details-list li span:first-child {
   flex: 0 0 150px;
+}
+
+.user-details .user-details-info .user-details-list .total {
+  background-color: #f2f2f2
 }
 
 .user-details
