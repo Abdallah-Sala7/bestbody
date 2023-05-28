@@ -42,6 +42,11 @@ $(".add-to-cart-btn").on("click", function () {
   setTimeout(() => {
     $(this).removeClass("loading");
     $(this).toggleClass("active");
+    // open cart panel
+    $(".panel-responsive-btn").addClass("panel-responsive-open");
+    $(".panel-responsive-item.cart-panel").addClass("active");
+    $(".side-overlay").addClass("active");
+
   }, 1000);
 });
 
@@ -71,44 +76,6 @@ $(".loading-btn").each(function () {
   });
 });
 
-/*------------- #accordion   --------------*/
-
-$(function () {
-  $(".accordion-panels .panel-item .accordion_header").click(function () {
-    let $items = $(this)
-        .closest(".accordion-panels.one-panel")
-        .find(".panel-item"),
-      $parent = $(this).closest(".panel-item"),
-      $body = $parent.find(".accordion_body");
-
-    $(this)
-      .closest(".one-panel")
-      .find(".accordion_body")
-      .not($body)
-      .slideUp(300);
-    $items.not($parent).removeClass("active");
-
-    if ($parent.hasClass("active")) {
-      $parent.removeClass("active ");
-      $body.slideUp(300);
-    } else {
-      $parent.toggleClass("active");
-      $body.slideToggle(300);
-    }
-  });
-});
-
-/*------------- #tabs functions --------------*/
-
-$(function () {
-  $(".tab-btn").click(function () {
-    $(this).parent().find(".tab-btn").removeClass("active");
-    $(this).addClass("active");
-    var current_tab = $(this).attr("data-target");
-    $(this).closest(".tabs-content-area").find(".tab-content").hide();
-    $("." + current_tab).fadeIn();
-  });
-});
 
 /*------------- #panel-responsive-items --------------*/
 
@@ -281,29 +248,16 @@ $(function () {
   });
 });
 
-/*------------- #show and hide password   --------------*/
-
-$(".password-field .eye-icon").on("click", function () {
-  var password_input = $(this).parent().find(".password-input");
-  console.log(password_input);
-
-  if (password_input.attr("type") === "password") {
-    password_input.attr("type", "text");
-    $(this).addClass("hide");
-  } else {
-    password_input.attr("type", "password");
-    $(this).removeClass("hide");
-  }
-});
-
 /*------------- fix viewport --------------*/
 
 let vh = window.innerHeight * 0.01;
 let navHeight = $(".nav-wraper").outerHeight();
 let toolBarHeight = $(".tool-bar").outerHeight();
+let headerHeight = $("header").outerHeight();
 
 document.documentElement.style.setProperty("--vh", `${vh}px`);
 document.documentElement.style.setProperty("--nav-h", `${navHeight}px`);
+document.documentElement.style.setProperty("--header-h", `${headerHeight}px`);
 document.documentElement.style.setProperty(
   "--tool-bar-h",
   `${toolBarHeight}px`
