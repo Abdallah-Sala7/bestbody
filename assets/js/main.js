@@ -43,10 +43,12 @@ $(".add-to-cart-btn").on("click", function () {
     $(this).removeClass("loading");
     $(this).toggleClass("active");
     // open cart panel
-    $(".panel-responsive-btn").addClass("panel-responsive-open");
-    $(".panel-responsive-item.cart-panel").addClass("active");
-    $(".side-overlay").addClass("active");
 
+    if ($(".add-to-cart-btn").hasClass("active")) {
+      $(".panel-responsive-btn").addClass("panel-responsive-open");
+      $(".panel-responsive-item.cart-panel").addClass("active");
+      $(".side-overlay").addClass("active");
+    }
   }, 1000);
 });
 
@@ -75,7 +77,6 @@ $(".loading-btn").each(function () {
     }, 1000);
   });
 });
-
 
 /*------------- #panel-responsive-items --------------*/
 
