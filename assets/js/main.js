@@ -62,6 +62,18 @@ $(".send-btn").on("click", function () {
   }, 1000);
 });
 
+/*------------- #tabs functions --------------*/
+
+$(function () {
+  $(".tab-btn").click(function () {
+    $(this).parent().find(".tab-btn").removeClass("active");
+    $(this).addClass("active");
+    var current_tab = $(this).attr("data-target");
+    $(this).closest(".tabs-content-area").find(".tab-content").hide();
+    $("." + current_tab).fadeIn();
+  });
+});
+
 /*------------- #loading-overlay-btn function --------------*/
 
 $(".loading-btn").each(function () {

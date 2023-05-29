@@ -1865,7 +1865,7 @@
       });
       /*------------- #featured-products-slider --------------*/
       var swiper = new Swiper(".products-slider", {
-        freeMode: true,
+        freeMode: window.innerWidth < 576 ? true : false,
         grabCursor: true,
         slidesPerView: "auto",
         spaceBetween: 12,
@@ -1878,7 +1878,7 @@
           hide: true,
         },
         breakpoints: {
-          640: {
+          576: {
             slidesPerView: 2,
           },
           768: {
